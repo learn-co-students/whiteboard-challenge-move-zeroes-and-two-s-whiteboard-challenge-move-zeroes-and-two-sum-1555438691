@@ -10,7 +10,10 @@ For example, given nums = `[0, 1, 0, 3, 12]`, after calling your method, nums sh
 
 ```ruby
 def move_zeroes(nums)
-
+  nums.select do |z|
+    z == 0
+  end
+nums.push << z #possible????? z is outside of do
 end
 ```
 
@@ -26,7 +29,15 @@ You may assume that each input would have exactly one solution.
 `Output: {index1: 0, index2: 1}"`
 
 ```ruby
-def two_sum(numbers, target)
+def two_sum(numbers, target)#(array,number)
+  counter = 0
+  test_mumber = numbers[counter]
+  look_for_me = target - test_number
+  numbers.indexOf(look_for_me)
+
+  {index1: counter, index2: #index of 2nd number#}
+
+
 
 end
 ```
