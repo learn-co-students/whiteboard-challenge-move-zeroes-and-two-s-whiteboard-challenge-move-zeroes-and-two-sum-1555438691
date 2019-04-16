@@ -9,9 +9,28 @@ For the next 30 minutes take turns with the person sitting next to you whiteboar
 For example, given nums = `[0, 1, 0, 3, 12]`, after calling your method, nums should be `[1, 3, 12, 0, 0]`.
 
 ```ruby
+
+require 'pry'
+
+nums = [0, 1, 0, 3, 12]
 def move_zeroes(nums)
 
+
 end
+
+##### My solution #####
+def move_zeroes(nums)
+    nums.sort_by do |numbers|
+        [if numbers == 0
+            1
+        else
+            0
+        end
+    ]
+    end
+end
+
+
 ```
 
 ## Problem2
